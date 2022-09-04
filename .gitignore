@@ -1,52 +1,63 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main() {
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    int i;
+    float num1[10];
+    float num2[10];
+    float num3[10];
+    float num4[10];
+    float num5[10];
+  
 
-# Precompiled Headers
-*.gch
-*.pch
+    srand(time(NULL));
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    for(i = 0; i < 10; i++)
+        num1[i] = rand() %500;
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+    printf("\n\n");
+  printf("valores do vetor 1:");
+    for(i = 0; i < 10; i++)
+      
+        printf("%.2f ", num1[i]);
+    printf("\n\n");
+  for(i = 0; i < 10; i++)
+        num2[i] = rand() %500;
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+    printf("\n\n");
+  printf("valores do vetor 2:");
+    for(i = 0; i < 10; i++)
+      
+        printf("%.2f ", num2[i]);
+    printf("\n\n");
+  for(i = 0; i < 10; i++)
+        num3[i] = rand() %500;
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+    printf("\n\n");
+  printf("valores do vetor 3:");
+    for(i = 0; i < 10; i++)
+      
+        printf("%.2f ", num3[i]);
+    printf("\n\n");
+for(i = 0; i < 10; i++)
+        num4[i] = rand() %500;
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    printf("\n\n");
+  printf("valores do vetor 4:");
+    for(i = 0; i < 10; i++)
+      
+        printf("%.2f ", num4[i]);
+    printf("\n\n");
+  for(i = 0; i < 10; i++)
+        num5[i] = rand() %500;
+
+    printf("\n\n");
+  printf("valores do vetor 5:");
+    for(i = 0; i < 10; i++)
+      
+        printf("%.2f ", num5[i]);
+    printf("\n\n");
+    return 0;
+}
